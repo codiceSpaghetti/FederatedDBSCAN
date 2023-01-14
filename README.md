@@ -1,5 +1,5 @@
 # DMML_FederatedDBSCAN
-This repository contains a project that implements the DBScan clustering algorithm in a federated way. The goal of this project is to enable distributed clustering of data across multiple devices or nodes in a decentralized network, while preserving the privacy of the individual data points. The implementation is based on the original DBScan algorithm, but has been adapted to work in a federated setting.
+This repository contains a project that **implements the DBScan clustering algorithm in a federated way**. The goal of this project is to enable **distributed clustering** of data across multiple devices or nodes in a decentralized network, while **preserving the privacy** of the individual data points. The implementation is based on the original DBScan algorithm, but has been adapted to work in a federated setting.
 
 Please, check the [Presentation](Project_Presentation.pdf) for a complete view. 
 
@@ -23,11 +23,13 @@ Steps:
 
 DBSCAN algorithm does not require to specify the number of clusters in advance, it finds them based on the density of the data. It allows for the discovery of clusters of arbitrary shape and is particularly well-suited for datasets with varying densities. However, the choice of ε and MinPts can greatly affect the resulting clusters, and finding good values for these parameters can be challenging.
 
-<img src='dbscan_schema.png'> 
+<p align="center">
+  <img src='dbscan_schema.png'> 
+</p>
 
 ## Steps of the Algorithm
 Our Adaptation of the algorithm for Federated Learning setting consists in the following steps: 
 <img src='steps.png'>
 
 ## Benchmarking
-The algorithm was tested with various parameter settings and against different data sets. Its performance was then compared with that of a standard DBSCAN. No substantial difference emerged from this comparison, so almost no performance losses.
+The algorithm was tested with various parameter settings and against different data sets. Its performance was then compared with that of a standard DBSCAN. No substantial difference emerged from this comparison, so almost **no performance losses**.
